@@ -21,20 +21,20 @@ public class Main {
 	}
 
 	public static void ejecutarVehiculo() {
-		Auto v1 = new Auto("Tesla", 2023);
-		Moto v2 = new Moto("Yamaha", 2019);
+		Auto a1 = new Auto("Tesla", 2023);
+		Moto m1 = new Moto("Yamaha", 2019);
 		// Vehiculo v3 = new Vehiculo("Yamaha", 2019);
 		// NO se puede!!! Las clases abstractas no son instanciables
 
-		v1.mostrarInfoVehiculo();
-		v1.cargarBateria();
-		v1.encender();
-		v1.conectarWifi();
+		a1.mostrarInfoVehiculo();
+		a1.cargarBateria();
+		a1.encender();
+		a1.conectarWifi();
 
 		System.out.println("\n----------\n");
 
-		v2.mostrarInfoVehiculo();
-		v2.encender();
+		m1.mostrarInfoVehiculo();
+		m1.encender();
 
 		System.out.println("\n----------\n");
 

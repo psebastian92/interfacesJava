@@ -1,6 +1,8 @@
 package paqueteVehiculos;
 
-public class Moto extends Vehiculo {
+import interfaces.Encendible;
+
+public class Moto extends Vehiculo implements Encendible {
 
     public Moto(String marca, int anio) {
         super(marca, anio);

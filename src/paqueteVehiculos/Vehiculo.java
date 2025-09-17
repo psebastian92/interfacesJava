@@ -10,9 +10,8 @@ public abstract class Vehiculo {
     }
 
     public void mostrarInfoVehiculo() {
-        System.out.println("Marca: " + marca + " - Año: " + anio);
+        System.out.println("Marca: " + marca + " - Aï¿½o: " + anio);
     }
 
-    // Método abstracto (obliga a cada subclase a definirlo)
-    public abstract void encender();
+
 }

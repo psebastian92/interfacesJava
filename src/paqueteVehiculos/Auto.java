@@ -1,9 +1,10 @@
 package paqueteVehiculos;
 
 import interfaces.Conectable;
+import interfaces.Encendible;
 import interfaces.Recargable;
 
-public class Auto extends Vehiculo implements Conectable, Recargable {
+public class Auto extends Vehiculo implements Encendible, Conectable, Recargable {
 
     public Auto(String marca, int anio) {
         super(marca, anio);
@@ -11,7 +12,7 @@ public class Auto extends Vehiculo implements Conectable, Recargable {
 
     @Override
     public void encender() {
-        System.out.println("El auto arranca con botón de encendido.");
+        System.out.println("El auto arranca con botï¿½n de encendido.");
     }
 
     @Override
@@ -21,7 +22,7 @@ public class Auto extends Vehiculo implements Conectable, Recargable {
 
     @Override
     public void cargarBateria() {
-        System.out.println("Cargando la batería del auto eléctrico...");
+        System.out.println("Cargando la baterï¿½a del auto elï¿½ctrico...");
     }
 }
 
