@@ -21,13 +21,15 @@ public class Main {
 	}
 
 	public static void ejecutarVehiculo() {
-		Vehiculo v1 = new Auto("Tesla", 2023);
-		Vehiculo v2 = new Moto("Yamaha", 2019);
+		Auto v1 = new Auto("Tesla", 2023);
+		Moto v2 = new Moto("Yamaha", 2019);
 		// Vehiculo v3 = new Vehiculo("Yamaha", 2019);
 		// NO se puede!!! Las clases abstractas no son instanciables
 
 		v1.mostrarInfoVehiculo();
+		v1.cargarBateria();
 		v1.encender();
+		v1.conectarWifi();
 
 		System.out.println("\n----------\n");
 
@@ -36,14 +38,6 @@ public class Main {
 
 		System.out.println("\n----------\n");
 
-		// Usando las interfaces
-		if (v1 instanceof Vehiculo) {
-			((Conectable) v1).conectarWifi();
-		}
-
-		if (v1 instanceof Vehiculo) {
-			((Recargable) v1).cargarBateria();
-		}
 	}
 
 	public static void ejecutarCelular() {
@@ -62,21 +56,22 @@ public class Main {
 		// Mostrar info de cada celular
 		for (Celular celular : listaCelulares) {
 			celular.mostrarInfoCel();
-			//celular.encender(); NO se puede! Pues la clase "Celular" NO implementa las interfaces
+			// celular.encender(); NO se puede! Pues la clase "Celular" NO implementa las
+			// interfaces
 			System.out.println("-----");
 		}
-		
+
 		s1.encender();
 		s1.cargarBateria();
 		s1.conectarWifi();
 		s1.usarSPen();
-		
+
 		System.out.println("\n----------\n");
-		
+
 		m1.encender();
 		m1.cargarBateria();
 		m1.conectarWifi();
-		
+
 	}
 
 }
