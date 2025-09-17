@@ -1,6 +1,6 @@
-package clases;
+package paqueteVehiculos;
 
-abstract class Vehiculo {
+public abstract class Vehiculo {
     String marca;
     int anio;
 
@@ -9,10 +9,10 @@ abstract class Vehiculo {
         this.anio = anio;
     }
 
-    void mostrarInfo() {
+    public void mostrarInfoVehiculo() {
         System.out.println("Marca: " + marca + " - Año: " + anio);
     }
 
     // Método abstracto (obliga a cada subclase a definirlo)
-    abstract void encender();
+    public abstract void encender();
 }

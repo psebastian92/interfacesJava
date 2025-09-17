@@ -1,16 +1,16 @@
-package clases;
+package paqueteVehiculos;
 
 import interfaces.Conectable;
 import interfaces.Recargable;
 
-class Auto extends Vehiculo implements Conectable, Recargable {
+public class Auto extends Vehiculo implements Conectable, Recargable {
 
-    Auto(String marca, int anio) {
+    public Auto(String marca, int anio) {
         super(marca, anio);
     }
 
     @Override
-    void encender() {
+    public void encender() {
         System.out.println("El auto arranca con botón de encendido.");
     }
 

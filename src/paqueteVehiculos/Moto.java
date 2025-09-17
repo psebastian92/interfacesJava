@@ -1,4 +1,4 @@
-package clases;
+package paqueteVehiculos;
 
 public class Moto extends Vehiculo {
 
