@@ -14,8 +14,9 @@ import paqueteVehiculos.Vehiculo;
 
 public class Main {
 	public static void main(String[] args) {
+		System.err.println("-----VEHICULOS-----\n");
 		ejecutarVehiculo();
-		System.out.println("\n----------\n");
+		System.err.println("\n-----CELULARES-----\n");
 		ejecutarCelular();
 	}
 
